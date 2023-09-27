@@ -1,10 +1,22 @@
 import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { useCart } from "../../contex/CartContext";
+import { useNavigate } from "react-router-dom";
 
-const ItemDetail = ({ nombre, precio, descripcion, image, stock }) => {
+const ItemDetail = ({ id, nombre, precio, descripcion, image, stock }) => {
   const [quantity, setQuantity] = useState(0);
+  const { addItem } = useCart();
+  const navigate = useNavigate();
+
   const handleOnAdd = (quantity) => {
-    console.log("se agrego " + quantity);
+    const objLibrosToadd = {
+      id,
+      nombre,
+      precio,
+      quantity,
+    };
+    addItem(objLibrosToadd);
+    console.log("agregue al carrito:", quantity);
     setQuantity(quantity);
   };
   return (
@@ -16,7 +28,7 @@ const ItemDetail = ({ nombre, precio, descripcion, image, stock }) => {
       {quantity == 0 ? (
         <ItemCount stock={stock} onAdd={handleOnAdd} />
       ) : (
-        <button>Finalizar compra</button>
+        <button onClick={() => navigate("/Cart")}>Finalizar compra</button>
       )}
     </div>
   );

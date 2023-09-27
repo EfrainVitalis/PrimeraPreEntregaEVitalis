@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 const Item = ({ id, nombre, image, precio }) => {
+  // const value = useContext(MiContext);
+  // console.log(value);
   const navigate = useNavigate();
   return (
     <div>
