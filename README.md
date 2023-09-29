@@ -8,7 +8,8 @@ git clone https://github.com/EfrainVitalis/PrimeraPreEntregaEVitalis/tree/master
 cd https://proyectofinalreactefrainvitalis.vercel.app/
 npm install
 npm start
-## Características
+
+## Caracteristicas
 -Este proyecto utiliza diferentes componentes para manejar las rutas y mostrar tarjetas de productos. Algunas de las características incluyen:
 
 -Rutas Navegables: Utilizamos React Router para crear rutas navegables para diferentes páginas, como la página de inicio, la página de productos y la página de detalles del producto.
