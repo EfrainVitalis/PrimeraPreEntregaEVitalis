@@ -1,8 +1,19 @@
-# React + Vite
+# Proyecto de E-commerce en ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de e-commerce desarrollado como parte de un proyecto final de estudio en ReactJS. El objetivo principal de este proyecto es demostrar el uso de ReactJS para crear una aplicación web de ecommerce, se da prioridad al uso de reactjs.
 
-Currently, two official plugins are available:
+## Instalación
+```bash
+git clone https://github.com/EfrainVitalis/PrimeraPreEntregaEVitalis/tree/master
+cd https://proyectofinalreactefrainvitalis.vercel.app/
+npm install
+npm start
+## Características
+-Este proyecto utiliza diferentes componentes para manejar las rutas y mostrar tarjetas de productos. Algunas de las características incluyen:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Rutas Navegables: Utilizamos React Router para crear rutas navegables para diferentes páginas, como la página de inicio, la página de productos y la página de detalles del producto.
+
+-Tarjetas de Producto: Componentes de tarjetas de producto para mostrar información relevante sobre los productos disponibles.
+
+-Carrito de Compras: Un carrito de compras básico que permite a los usuarios agregar productos y realizar pedidos.
+
