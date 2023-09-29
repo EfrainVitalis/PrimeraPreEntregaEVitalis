@@ -14,7 +14,7 @@ Este es un proyecto de e-commerce desarrollado como parte de un proyecto final d
 
 ## Instalación
 ```bash
-git clone https://github.com/EfrainVitalis/PrimeraPreEntregaEVitalis/tree/master
+git clone https://github.com/EfrainVitalis/ProyectofinalReactEVitalis
 cd https://proyectofinalreactefrainvitalis.vercel.app/
 npm install
 npm start
